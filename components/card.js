@@ -10,7 +10,7 @@ export default class Card extends React.Component {
     return (
       <View style={styles.card}>
         <Image source={this.props.image} style={styles.welcomeImage} />
-        <Text>{this.props.item}</Text>
+        <Text style={styles.itemText}>{this.props.item}</Text>
       </View>
     );
   }
@@ -18,22 +18,29 @@ export default class Card extends React.Component {
 
 const styles = StyleSheet.create({
   card: {
+    height: 120,
     width: 100,
     padding: 5,
     margin: 10,
     borderRadius: 3,
-    shadowColor: "#000000",
+    shadowColor: "#ffffff",
     shadowOpacity: 0.3,
     shadowRadius: 3,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#282828",
     elevation: 3,
-    shadowOffset: { width: 3, height: 3 }
+    shadowOffset: { width: 3, height: 3 },
+    alignContent: "center",
+    textAlign: "center",
+    alignItems: "center"
   },
   welcomeImage: {
     width: 100,
     height: 80,
     resizeMode: "contain",
     marginTop: 3,
-    marginLeft: -10
+    marginBottom: 5
+  },
+  itemText: {
+    color: "#dddddd"
   }
 });
