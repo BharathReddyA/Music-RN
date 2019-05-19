@@ -36,6 +36,10 @@ export default class HomeScreen extends React.Component {
           <Text style={Styles.text}>Hello User!</Text>
         </View>
 
+        <ImageBackground
+          style={{ width: "100%", height: 150 }}
+          source={require("../assets/images/bg-6.jpg")}
+        />
         <View style={{ paddingHorizontal: 10, paddingVertical: 15 }}>
           <Text style={Styles.headingText}>EDM</Text>
         </View>
@@ -72,6 +76,11 @@ export default class HomeScreen extends React.Component {
             />
           </TouchableOpacity>
         </ScrollView>
+
+        <ImageBackground
+          style={{ width: "100%", height: 150 }}
+          source={require("../assets/images/bg-1.jpg")}
+        />
 
         <View style={{ paddingHorizontal: 10, paddingVertical: 15 }}>
           <Text style={Styles.headingText}>POP</Text>
